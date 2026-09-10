@@ -1,0 +1,183 @@
+/* Основные настройки */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; padding: 0;
+}
+
+body {
+    background: #fff; color: #000000; font: 14px Arial, Helvetica, sans-serif;
+}
+
+.page {
+    width: 799px; min-height: 1080px; margin: auto; padding: 24px 29px 30px 30px;
+}
+
+.about, .info-table, .technologies, .feedback {
+    width: 740px;
+}
+
+/* Профиль */
+
+.profile {
+    height: 150px; display: flex; align-items: center;
+}
+
+.avatar {
+    width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+}
+
+.profile-name {
+    margin-left: 25px;
+}
+
+.profile-name h1 {
+    margin: 0 0 5px; font-size: 25px; line-height: 1.05;
+}
+
+.profile-name p {
+    margin: 0; color: #555; font-size: 14px;
+}
+
+.contacts {
+    margin-left: auto; width: 155px; text-align: right;
+}
+
+.contacts h2 {
+    margin: 0 0 9px; font-size: 22px; line-height: 1;
+}
+
+.contacts p {
+    margin: 0; font-size: 14px; line-height: 1.15; white-space: nowrap;
+}
+
+.contacts p + p {
+    margin-top: 6px;
+}
+
+hr {
+    border: 0; border-top: 1px solid #cfcfcf; margin: 30px 0 0;
+}
+
+/* Информация обо мне */
+
+.about {
+    margin-top: 21px; font-size: 14px; line-height: 1.16;
+}
+
+.about p {
+    margin: 0;
+}
+
+.info-table {
+    margin-top: 43px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #5A9645;
+    border-radius: 5px; overflow: hidden;
+}
+
+.table-title {
+    height: 29px; display: flex; align-items: center; justify-content: center;
+    color: #5A9645; font-weight: 700; font-size: 14px; border-bottom: 1px solid #5A9645;
+}
+
+.table-title:nth-child(2), .table-content:nth-child(4) {
+    border-left: 1px solid #5A9645;
+}
+
+.table-content {
+    height: 105px; padding: 15px 20px; font-size: 14px; display: flex;
+    align-items: center; justify-content: center;
+}
+
+.table-content ul, .table-content ol {
+    width: max-content; margin: 0; padding-left: 20px; line-height: 1.15;
+}
+
+.table-content a {
+    color: inherit; text-decoration: none;
+}
+
+/* Технологии */
+
+.technologies {
+    margin-top: 67px;
+}
+
+.technologies h2, .feedback h2 {
+    height: 29px; margin: 0 0 28px; border-radius: 4px; background: #5A9645;
+    color: #fff; font-size: 14px; font-weight: 700; line-height: 29px;
+    text-align: center;
+}
+
+.tech-list {
+    display: flex; align-items: flex-start; justify-content: space-between; padding: 0 25px;
+}
+
+.tech {
+    width: 88px; min-height: 91px; display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-start;
+}
+
+.tech > img {
+    width: 58px; height: 58px; object-fit: contain; margin-bottom: 12px;
+}
+
+.tech span {
+    font-size: 13px; line-height: 1; text-align: center;
+}
+
+.vue-tech {
+    width: 124px; padding: 11px 18px 14px; margin-top: -11px; border-radius: 5px;
+    background: #fff; box-shadow: 0 2px 18px #5A9645;
+}
+
+.vue-tech > img {
+    margin-bottom: 7px;
+}
+
+/* Форма обратной связи */
+
+.feedback {
+    margin-top: 66px;
+}
+
+.feedback h2 {
+    margin-bottom: 16px;
+}
+
+.form-row {
+    display: flex; gap: 14px;
+}
+
+input, textarea {
+    width: 100%; border: 1px solid #c8c8c8; border-radius: 5px; padding: 9px 12px;
+    font-family: inherit; font-size: 13px; outline: 0;
+}
+
+input {
+    height: 36px;
+}
+
+textarea {
+    height: 114px; margin-top: 13px; resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bcbcbc;
+}
+
+button {
+    display: block; width: 120px; height: 32px; margin: 16px auto 0;
+    border: 0; border-radius: 4px; background: #5A9645; color: #fff;
+    font-family: inherit; font-size: 13px; cursor: pointer;
+}
+
+button:hover {
+    background: #5A9645;
+}
+
+.table-content a:hover {
+    color: #5A9645;
+}
