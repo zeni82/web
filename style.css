@@ -51,18 +51,14 @@ body {
 }
 
 .contacts p {
-    margin: 0; font-size: 14px; line-height: 1.15; white-space: nowrap;
-}
-
-.contacts p + p {
-    margin-top: 6px;
+    margin: 6px 0 0; font-size: 14px; line-height: 1.15; white-space: nowrap;
 }
 
 hr {
     border: 0; border-top: 1px solid #cfcfcf; margin: 30px 0 0;
 }
 
-/* Информация обо мне */
+/* Информация */
 
 .about {
     margin-top: 21px; font-size: 14px; line-height: 1.16;
@@ -74,16 +70,17 @@ hr {
 
 .info-table {
     margin-top: 43px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #5A9645;
-    border-radius: 5px; overflow: hidden;
+    border-radius: 5px; overflow: hidden; position: relative;
+}
+
+.info-table::after {
+    content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px;
+    background: #5A9645;
 }
 
 .table-title {
     height: 29px; display: flex; align-items: center; justify-content: center;
     color: #5A9645; font-weight: 700; font-size: 14px; border-bottom: 1px solid #5A9645;
-}
-
-.table-title:nth-child(2), .table-content:nth-child(4) {
-    border-left: 1px solid #5A9645;
 }
 
 .table-content {
