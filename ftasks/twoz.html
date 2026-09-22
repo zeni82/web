@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Массив</title>
+</head>
+<body>
+
+    <script>
+
+    const numbers = [4, 8, 15, 16, 23, 42];
+    let sum = 0;
+    let max = numbers[0];
+    let gT10 = [];
+    for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i];
+
+    if (numbers[i] > max) {
+    max = numbers[i];
+}
+    if (numbers[i] > 10) {
+        gT10.push(numbers[i]);
+
+    }
+
+
+}
+    console.log(max);
+    console.log(sum);
+    console.log("[" + gT10.join(", ") + "]");
+
+    
+    const max2 = Math.max(...numbers);
+
+
+    const sum2 = numbers.reduce((total, number) => total + number, 0);
+
+
+    const gT102 = numbers.filter(number => number > 10);
+
+    console.log(max2);
+    console.log(sum2);
+    console.log("[" + gT102.join(", ") + "]");
+   </script>
+
+
+</body>
+</html>

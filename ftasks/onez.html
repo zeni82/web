@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка числа</title>
+</head>
+<body>
+    <h1>Проверка числа</h1>
+
+    <script>
+    function checkNumber(number) {
+        if (number > 0) {
+            console.log("Положительное число");
+        } 
+         if (number < 0) {
+            console.log("Отрицательное число");
+        } 
+        if(number === 0) {
+            console.log("Это ноль");
+        } else {
+        if (number % 2 == 0) {
+            console.log("Чётное число");
+        } else {
+            console.log("Нечётное число");
+        }   
+    }
+    }
+        checkNumber(0);
+    </script>
+
+</body>
+</html>
