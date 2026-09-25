@@ -1,0 +1,8 @@
+.block {
+    border: 1px solid black;
+    background-color: lightgreen;
+}
+
+div {
+    display: flex;
+}
